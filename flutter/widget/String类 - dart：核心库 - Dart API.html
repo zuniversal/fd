@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://api.dart.dev/stable/2.5.0/dart-core/String-class.html -->
+<html lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the String class from the dart:core library, for the Dart programming language.">
+  <title>String类 -  dart：核心库 -  Dart API</title>
+  <link rel="canonical" href="https://api.dartlang.org/stable/dart-core/String-class.html">
+  <!-- required because all the links are pseudo-absolute -->
+  <!--<base href="..">--><base href=".">
+
+  <link href="./String类 - dart：核心库 - Dart API_files/css" rel="stylesheet">
+  <link href="./String类 - dart：核心库 - Dart API_files/icon" rel="stylesheet">
+  <link rel="stylesheet" href="./String类 - dart：核心库 - Dart API_files/github.css">
+  <link rel="stylesheet" href="./String类 - dart：核心库 - Dart API_files/styles.css">
+  <link rel="icon" href="https://api.dart.dev/stable/2.5.0/static-assets/favicon.png">
+  
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./String类 - dart：核心库 - Dart API_files/translateelement.css"></head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs" style="display: none;">
+    <li><a href="https://api.dart.dev/stable/2.5.0/index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">镖</font></font></a></li>
+    <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/dart-core-library.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">镖：核心</font></font></a></li>
+    <li class="self-crumb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串抽象类</font></font></li>
+  </ol>
+  <div class="self-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">串</font></font></div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" class="form-control typeahead" placeholder="Search API Docs">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left" style="visibility: visible;">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" class="form-control typeahead" placeholder="Search API Docs">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="https://api.dart.dev/stable/2.5.0/index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">镖</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/dart-core-library.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">镖：核心</font></font></a></li>
+      <li class="self-crumb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串抽象类</font></font></li>
+    </ol>
+    
+    <h5 style="font-size: 14px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">飞镖：核心库</font></font></h5>
+    <ol>
+      <li class="section-title"><a href="https://api.dart.dev/stable/2.5.0/dart-core/dart-core-library.html#classes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">类</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/BidirectionalIterator-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BidirectionalIterator</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/BigInt-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BigInt有</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/bool-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">布尔</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Comparable-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可比</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/DateTime-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">约会时间</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Deprecated-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">弃用</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/double-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">双</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Duration-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">持续时间</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Expando-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为Expando</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Function-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">功能</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-async/Future-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未来</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">INT</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Invocation-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">调用</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Iterable-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可迭代</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Iterator-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">迭代器</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/List-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">名单</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Map-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">地图</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/MapEntry-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MapEntry</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Match-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">比赛</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Null-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">空值</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/num-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NUM</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Object-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">宾语</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图案</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/pragma-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编译</font></font></a></li>
+      <li><a class="deprecated" href="https://api.dart.dev/stable/2.5.0/dart-core/Provisional-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">临时</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/RegExp-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">正则表达式</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/RegExpMatch-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RegExpMatch</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/RuneIterator-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RuneIterator</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Runes-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">符文</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Set-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">组</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Sink-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下沉</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/StackTrace-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">堆栈跟踪</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Stopwatch-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">跑表</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-async/Stream-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">流</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">串</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/StringBuffer-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的StringBuffer</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/StringSink-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">StringSink</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Symbol-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">符号</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Type-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">类型</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Uri-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">乌里</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/UriData-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UriData</font></font></a></li>
+    
+    
+      <li class="section-title"><a href="https://api.dart.dev/stable/2.5.0/dart-core/dart-core-library.html#constants"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常量</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/deprecated-constant.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">弃用</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/override-constant.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">覆盖</font></font></a></li>
+      <li><a class="deprecated" href="https://api.dart.dev/stable/2.5.0/dart-core/provisional-constant.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">临时</font></font></a></li>
+      <li><a class="deprecated" href="https://api.dart.dev/stable/2.5.0/dart-core/proxy-constant.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代理</font></font></a></li>
+    
+    
+      <li class="section-title"><a href="https://api.dart.dev/stable/2.5.0/dart-core/dart-core-library.html#functions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">功能</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/identical.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相同</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/identityHashCode.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">identityHashCode</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/print.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打印</font></font></a></li>
+    
+    
+      <li class="section-title"><a href="https://api.dart.dev/stable/2.5.0/dart-core/dart-core-library.html#typedefs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">类型定义</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Comparator.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">比较</font></font></a></li>
+    
+      <li class="section-title"><a href="https://api.dart.dev/stable/2.5.0/dart-core/dart-core-library.html#exceptions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例外</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/AbstractClassInstantiationError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AbstractClassInstantiationError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/ArgumentError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">引发ArgumentError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/AssertionError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asse田</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/CastError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CastError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/ConcurrentModificationError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ConcurrentModificationError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/CyclicInitializationError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CyclicInitializationError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Error-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">错误</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Exception-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例外</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/FallThroughError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FallThroughError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/FormatException-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">出现FormatException</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/IndexError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IndexError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/IntegerDivisionByZeroException-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IntegerDivisionByZeroException</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/NoSuchMethodError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的NoSuchMethodError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/NullThrownError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NullThrownError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/OutOfMemoryError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的OutOfMemoryError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/RangeError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">引发RangeError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/StackOverflowError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的StackOverflowError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/StateError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">StateError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/TypeError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">类型错误</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/UnimplementedError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UnimplementedError</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/UnsupportedError-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UnsupportedError</font></font></a></li>
+    </ol>
+  </div>
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content" style="visibility: visible;">
+      <div>  <div id="external-links" class="btn-group"><a title="查看源代码" class="source-link" href="https://github.com/dart-lang/sdk/blob/54a1bd9624d81217d40160ddb699f05a16d87358/sdk/lib/core/string.dart#L100"><i class="material-icons"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">描述</font></font></i></a></div>
+<h1 style="font-size: 14px;"><span class="kind-class"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">类</font></font></h1></div>
+
+    <section class="desc markdown">
+      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一系列UTF-16代码单元。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串主要用于表示文本。</font><font style="vertical-align: inherit;">字符可以由多个代码点表示，每个代码点由一个或两个代码单元组成。</font><font style="vertical-align: inherit;">例如，巴布亚新几内亚国旗角色需要四个代码单元来表示两个代码点，但应该被视为单个字符：“🇵🇬”。</font><font style="vertical-align: inherit;">不支持标志字符的平台可能会显示字母“PG”。</font><font style="vertical-align: inherit;">如果代码点被交换，则它变为瓜德罗普岛标志“🇬🇵”（“GP”）。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串可以是单行或多行。</font><font style="vertical-align: inherit;">单行字符串使用匹配的单引号或双引号编写，多行字符串使用三引号编写。</font><font style="vertical-align: inherit;">以下是所有有效的Dart字符串：</font></font></p>
+<pre class="language-dart"><code class="hljs"><span class="hljs-string">'Single quotes'</span>;
+<span class="hljs-string">"Double quotes"</span>;
+<span class="hljs-string">'Double quotes in "single" quotes'</span>;
+<span class="hljs-string">"Single quotes in 'double' quotes"</span>;<font></font>
+<font></font>
+<span class="hljs-string">'''A
+multiline
+string'''</span>;<font></font>
+<font></font>
+<span class="hljs-string">"""
+Another
+multiline
+string"""</span>;
+</code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串是不可变的。</font><font style="vertical-align: inherit;">虽然您无法更改字符串，但您可以对字符串执行操作并将结果分配给新字符串：</font></font></p>
+<pre class="language-dart"><code class="hljs"><span class="hljs-keyword">var</span> string = <span class="hljs-string">'Dart is fun'</span>;
+<span class="hljs-keyword">var</span> newString = string.substring(<span class="hljs-number">0</span>, <span class="hljs-number">5</span>);
+</code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以使用plus（</font></font><code>+</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）运算符来连接字符串：</font></font></p>
+<pre class="language-dart"><code class="hljs"><span class="hljs-string">'Dart '</span> + <span class="hljs-string">'is '</span> + <span class="hljs-string">'fun!'</span>; <span class="hljs-comment">// 'Dart is fun!'</span>
+</code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还可以使用相邻的字符串文字进行连接：</font></font></p>
+<pre class="language-dart"><code class="hljs"><span class="hljs-string">'Dart '</span> <span class="hljs-string">'is '</span> <span class="hljs-string">'fun!'</span>;    <span class="hljs-comment">// 'Dart is fun!'</span>
+</code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以使用</font></font><code>${}</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在字符串中插入Dart表达式的值。</font><font style="vertical-align: inherit;">评估标识符时可以省略花括号：</font></font></p>
+<pre class="language-dart"><code class="hljs">string = <span class="hljs-string">'dartlang'</span>;
+<span class="hljs-string">'<span class="hljs-subst">$string</span> has <span class="hljs-subst">${string.length}</span> letters'</span>; <span class="hljs-comment">// 'dartlang has 8 letters'</span>
+</code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串由可通过</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/codeUnitAt.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">codeUnitAt</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/codeUnits.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">codeUnits</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">成员</font><font style="vertical-align: inherit;">访问的Unicode UTF-16代码单元序列表示</font><font style="vertical-align: inherit;">：</font></font></p>
+<pre class="language-dart"><code class="hljs">string = <span class="hljs-string">'Dart'</span>;<font></font>
+string.codeUnitAt(<span class="hljs-number">0</span>); <span class="hljs-comment">// 68</span>
+string.codeUnits;     <span class="hljs-comment">// [68, 97, 114, 116]</span>
+</code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代码单元的字符串表示形式可通过索引运算符访问：</font></font></p>
+<pre class="language-dart"><code class="hljs">string[<span class="hljs-number">0</span>];            <span class="hljs-comment">// 'D'</span>
+</code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串的字符以UTF-16编码。</font><font style="vertical-align: inherit;">解码组合代理对的UTF-16产生Unicode代码点。</font><font style="vertical-align: inherit;">遵循与Go类似的术语，我们使用名称'rune'表示Unicode代码点的整数。</font><font style="vertical-align: inherit;">使用</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/runes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">runes</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">属性获取字符串的符文：</font></font></p>
+<pre class="language-dart"><code class="hljs">string.runes.toList(); <span class="hljs-comment">// [68, 97, 114, 116]</span>
+</code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于由代理对组成的基本多语言平面（平面0）之外的字符，</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/runes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">符文</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">组合该对并返回单个整数。</font><font style="vertical-align: inherit;">例如，符号值为0x1D11E的音乐G-clef（'𝄞'）的Unicode字符由UTF-16代理对组成：</font></font><code>0xD834</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>0xDD1E</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">使用</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/codeUnits.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">codeUnits</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">返回代理项对，并使用</font></font><code>runes</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">返回它们的组合值：</font></font></p>
+<pre class="language-dart"><code class="hljs"><span class="hljs-keyword">var</span> clef = <span class="hljs-string">'\u{1D11E}'</span>;<font></font>
+clef.codeUnits;         <span class="hljs-comment">// [0xD834, 0xDD1E]</span>
+clef.runes.toList();    <span class="hljs-comment">// [0x1D11E]</span>
+</code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无法扩展或实现String类。</font><font style="vertical-align: inherit;">尝试这样做会产生编译时错误。</font></font></p>
+<h2 id="other-resources" style="font-size: 14px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他资源</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/StringBuffer-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">StringBuffer</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以有效地逐步构建字符串。</font><font style="vertical-align: inherit;">请参阅
+ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/RegExp-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RegExp</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以使用正则表达式。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">另见：</font></font></p><ul><li><a href="https://www.dartlang.org/docs/cookbook/#strings"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+用于字符串示例和配方的</font><a href="https://www.dartlang.org/docs/cookbook/#strings"><font style="vertical-align: inherit;">Dart Cookbook</font></a><font style="vertical-align: inherit;">。</font></font></li><li><a href="https://www.dartlang.org/docs/dart-up-and-running/ch03.html#strings-and-regular-expressions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">飞镖跑步</font></font></a></li></ul>
+    </section>
+    
+    <section>
+      <dl class="dl-horizontal">
+
+        <dt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实施类型</font></font></dt>
+        <dd>
+          <ul class="comma-separated clazz-relationships">
+            <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Comparable-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可比较的</font></font></a><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt; </font></font><wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &gt;</font></font></span></li>
+            <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图案</font></font></a></li>
+          </ul>
+        </dd>
+
+
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2 style="font-size: 14px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构造函数</font></font></h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="String.fromCharCode" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/String.fromCharCode.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String.fromCharCode</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><span class="parameter" id="fromCharCode-param-charCode"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> charCode</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></span>
+        </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          为指定的分配新String </font></font><code>charCode</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/String.fromCharCode.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+          <div class="constructor-modifier features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">厂</font></font></div>
+        </dd>
+        <dt id="String.fromCharCodes" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/String.fromCharCodes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String.fromCharCodes</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><span class="parameter" id="fromCharCodes-param-charCodes"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Iterable-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Iterable </font></font></a><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt; </font></font><wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &gt;</font></font></span></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> charCodes</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，[ </font></font></span> <span class="parameter" id="fromCharCodes-param-start"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> start</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="default-value"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，</font></font></span> <span class="parameter" id="fromCharCodes-param-end"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> end</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ]）</font></font></span>
+        </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          为指定的分配新String </font></font><code>charCodes</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/String.fromCharCodes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+          <div class="constructor-modifier features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">厂</font></font></div>
+        </dd>
+        <dt id="String.fromEnvironment" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/String.fromEnvironment.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String.fromEnvironment</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><span class="parameter" id="fromEnvironment-param-name"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> name</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，{ </font></font></span> <span class="parameter" id="fromEnvironment-param-defaultValue"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> defaultValue</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> }）</font></font></span>
+        </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          返回环境声明的字符串值</font></font><code>name</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/String.fromEnvironment.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+          <div class="constructor-modifier features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常量</font></font></div>
+          <div class="constructor-modifier features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">厂</font></font></div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2 style="font-size: 14px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">属性</font></font></h2>
+
+      <dl class="properties">
+        <dt id="codeUnits" class="property">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/codeUnits.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">codeUnits</font></font></a></span>
+          <span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> → </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/List-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">List </font></font></a><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt; </font></font><wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &gt;</font></font></span></span>         
+        </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          返回此字符串的UTF-16代码单元的不可修改列表。
+                  </font></font><div class="features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">只读</font></font></div>
+</dd>
+        <dt id="hashCode" class="property">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/hashCode.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hashCode</font></font></a></span>
+          <span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> → </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span>         
+        </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          返回从字符串的代码单元派生的哈希码。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/hashCode.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  <div class="features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">只读，覆盖</font></font></div>
+</dd>
+        <dt id="isEmpty" class="property">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/isEmpty.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">isEmpty</font></font></a></span>
+          <span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> → </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/bool-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bool</font></font></a></span>         
+        </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          如果此字符串为空，则返回true。
+                  </font></font><div class="features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">只读</font></font></div>
+</dd>
+        <dt id="isNotEmpty" class="property">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/isNotEmpty.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">isNotEmpty</font></font></a></span>
+          <span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> → </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/bool-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">布尔</font></font></a></span>         
+        </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          如果此字符串不为空，则返回true。
+                  </font></font><div class="features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">只读</font></font></div>
+</dd>
+        <dt id="length" class="property">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/length.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">长度</font></font></a></span>
+          <span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> → </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span>         
+        </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          字符串的长度。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/length.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  <div class="features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">只读</font></font></div>
+</dd>
+        <dt id="runes" class="property">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/runes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">符文</font></font></a></span>
+          <font style="vertical-align: inherit;"><span class="signature"><font style="vertical-align: inherit;"> → </font></span><span class="signature"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Runes-class.html"><font style="vertical-align: inherit;">符</font></a></span><span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/runes.html"><font style="vertical-align: inherit;">文</font></a></span></font><span class="signature"><font style="vertical-align: inherit;"></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/Runes-class.html"><font style="vertical-align: inherit;"></font></a></span>         
+        </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          返回</font><font style="vertical-align: inherit;">此字符串</font><font style="vertical-align: inherit;">的</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/Iterable-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Iterable</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> of Unicode代码点。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/runes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  <div class="features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">只读</font></font></div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Object/runtimeType.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">runtimeType</font></font></a></span>
+          <span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> → </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/Type-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">类型</font></font></a></span>         
+        </dt>
+        <dd class="inherited"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          表示对象的运行时类型。
+                  </font></font><div class="features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">只读，继承</font></font></div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2 style="font-size: 14px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">方法</font></font></h2>
+      <dl class="callables">
+        <dt id="codeUnitAt" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/codeUnitAt.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">codeUnitAt</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="codeUnitAt-param-index"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> index</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          返回给定的16位UTF-16代码单元</font></font><code>index</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+                  
+</font></font></dd>
+        <dt id="compareTo" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/compareTo.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">compareTo</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="compareTo-param-other"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> other</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          比较此字符串</font></font><code>other</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/compareTo.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  <div class="features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">覆盖</font></font></div>
+</dd>
+        <dt id="contains" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/contains.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">contains</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="contains-param-other"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pattern</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> other</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，[ </font></font></span> <span class="parameter" id="contains-param-startIndex"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> startIndex</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="default-value"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ]）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/bool-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bool</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          如果此字符串包含以下匹配项，则返回true </font></font><code>other</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/contains.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="endsWith" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/endsWith.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">endsWith</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="endsWith-param-other"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> other</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/bool-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">布尔</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          如果此字符串以此结尾，则返回true </font></font><code>other</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">例如：</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/endsWith.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="indexOf" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/indexOf.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">indexOf</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="indexOf-param-pattern"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pattern</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> pattern</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，[ </font></font></span> <span class="parameter" id="indexOf-param-start"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> start</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ]）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          返回</font></font><code>pattern</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此字符串中</font><font style="vertical-align: inherit;">第一个匹配项的位置</font><font style="vertical-align: inherit;">，从以下开始</font></font><code>start</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/indexOf.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="lastIndexOf" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/lastIndexOf.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lastIndexOf</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="lastIndexOf-param-pattern"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pattern</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> pattern</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，[ </font></font></span> <span class="parameter" id="lastIndexOf-param-start"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> start</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ]）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          返回</font></font><code>pattern</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此字符串中</font><font style="vertical-align: inherit;">最后一个匹配项的位置，从包含的位置</font><font style="vertical-align: inherit;">开始向后搜索</font></font><code>start</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/lastIndexOf.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="padLeft" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/padLeft.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">padLeft</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="padLeft-param-width"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> width</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，[ </font></font></span> <span class="parameter" id="padLeft-param-padding"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> padding</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="default-value"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">''</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ]）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          如果它短于，则在左侧填充此字符串</font></font><code>width</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/padLeft.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="padRight" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/padRight.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">padRight</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="padRight-param-width"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> width</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，[ </font></font></span> <span class="parameter" id="padRight-param-padding"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> padding</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="default-value"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">''</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ]）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          如果它短于，则在右边填充此字符串</font></font><code>width</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/padRight.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="replaceAll" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceAll.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">replaceAll</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="replaceAll-param-from"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pattern</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> from</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，</font></font></span> <span class="parameter" id="replaceAll-param-replace"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> replace</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          替换所有匹配的子串</font></font><code>from</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用</font></font><code>replace</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceAll.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="replaceAllMapped" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceAllMapped.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">replaceAllMapped</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="replaceAllMapped-param-from"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pattern</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> from</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，</font></font></span> <span class="parameter" id="replaceAllMapped-param-replace"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> replace</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><span class="parameter" id="replace-param-match"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Match-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Match</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> match</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          用匹配</font></font><code>from</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">计算的字符串</font><font style="vertical-align: inherit;">替换所有匹配</font><font style="vertical-align: inherit;">的</font><font style="vertical-align: inherit;">子</font><font style="vertical-align: inherit;">字符串。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceAllMapped.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="replaceFirst" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceFirst.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">replaceFirst</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="replaceFirst-param-from"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pattern</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> from</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，</font></font></span> <span class="parameter" id="replaceFirst-param-to"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> to</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，[ </font></font></span> <span class="parameter" id="replaceFirst-param-startIndex"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> startIndex</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="default-value"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ]）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          返回一个新字符串，</font></font><code>from</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在该字符串中替换此字符串中</font><font style="vertical-align: inherit;">的第一个匹配项</font></font><code>to</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，从</font></font><code>startIndex</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceFirst.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]开始</font></font></a>
+                  
+</dd>
+        <dt id="replaceFirstMapped" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceFirstMapped.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">replaceFirstMapped</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="replaceFirstMapped-param-from"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pattern</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> from</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，</font></font></span> <span class="parameter" id="replaceFirstMapped-param-replace"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> replace</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><span class="parameter" id="replace-param-match"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Match-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Match</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> match</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">），[ </font></font></span> <span class="parameter" id="replaceFirstMapped-param-startIndex"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> startIndex</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="default-value"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ]）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          替换</font></font><code>from</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此字符串中</font><font style="vertical-align: inherit;">的第一个匹配项</font><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceFirstMapped.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="replaceRange" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceRange.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">replaceRange</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="replaceRange-param-start"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> start</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，</font></font></span> <span class="parameter" id="replaceRange-param-end"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> end</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，</font></font></span> <span class="parameter" id="replaceRange-param-replacement"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> replacement</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          将子字符串替换</font></font><code>start</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为</font></font><code>end</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">with </font></font><code>replacement</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceRange.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="split" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/split.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">split</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="split-param-pattern"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pattern</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> pattern</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/List-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">List </font></font></a><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt; </font></font><wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &gt;</font></font></span></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          在匹配的位置拆分字符串</font></font><code>pattern</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并返回子字符串列表。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/split.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="splitMapJoin" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/splitMapJoin.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">splitMapJoin</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="splitMapJoin-param-pattern"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pattern</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> pattern</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，{ </font></font></span> <span class="parameter" id="splitMapJoin-param-onMatch"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> onMatch</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><span class="parameter" id="onMatch-param-match"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Match-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Match</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> match</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">），</font></font></span> <span class="parameter" id="splitMapJoin-param-onNonMatch"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> onNonMatch</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><span class="parameter" id="onNonMatch-param-nonMatch"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> nonMatch</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> }）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          拆分字符串，转换其部分，并将它们组合成一个新字符串。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/splitMapJoin.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="startsWith" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/startsWith.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">startsWith</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="startsWith-param-pattern"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pattern</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> pattern</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，[ </font></font></span> <span class="parameter" id="startsWith-param-index"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> index</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="default-value"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ]）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/bool-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bool</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          如果此字符串以匹配的开头，则返回true </font></font><code>pattern</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/startsWith.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="substring" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/substring.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">substring</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="substring-param-startIndex"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> startIndex</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，[ </font></font></span> <span class="parameter" id="substring-param-endIndex"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> endIndex</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ]）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          返回此字符串的子字符串，该字符串从</font></font><code>startIndex</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（包含）</font><font style="vertical-align: inherit;">扩展</font><font style="vertical-align: inherit;">到</font></font><code>endIndex</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">独占。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/substring.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="toLowerCase" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/toLowerCase.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">toLowerCase</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          将此字符串中的所有字符转换为小写。</font><font style="vertical-align: inherit;">如果字符串已全部为小写，则此方法返回</font></font><code>this</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/toLowerCase.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="toUpperCase" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/toUpperCase.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">toUpperCase</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          将此字符串中的所有字符转换为大写。</font><font style="vertical-align: inherit;">如果字符串已全部为大写，则此方法返回</font></font><code>this</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/toUpperCase.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="trim" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/trim.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">trim</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          返回没有任何前导和尾随空格的字符串。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/trim.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="trimLeft" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/trimLeft.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">trimLeft</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          返回没有任何前导空格的字符串。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/trimLeft.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="trimRight" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/trimRight.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">trimRight</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          返回没有任何尾随空格的字符串。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/trimRight.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="allMatches" class="callable inherited">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern/allMatches.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">allMatches</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="allMatches-param-string"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> string</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，[ </font></font></span> <span class="parameter" id="allMatches-param-start"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> start</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="default-value"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ]）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/Iterable-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Iterable </font></font></a><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt; </font></font><wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Match-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Match</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &gt;</font></font></span></span>
+          </span>
+                  </dt>
+        <dd class="inherited"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          重复匹配此模式与字符串。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern/allMatches.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  <div class="features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">遗传</font></font></div>
+</dd>
+        <dt id="matchAsPrefix" class="callable inherited">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern/matchAsPrefix.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">matchAsPrefix</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="matchAsPrefix-param-string"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">String</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> string</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，[ </font></font></span> <span class="parameter" id="matchAsPrefix-param-start"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> start</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="default-value"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ]）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/Match-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">匹配</font></font></a></span>
+          </span>
+                  </dt>
+        <dd class="inherited"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          将此模式与开头匹配</font></font><code>string</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern/matchAsPrefix.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  <div class="features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">遗传</font></font></div>
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">→ dynamic</span>
+          </span>
+                  </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/stable/2.5.0/dart-core/Object/noSuchMethod.html">[...]</a>
+                  <div class="features">inherited</div>
+</dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">→ <a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html">String</a></span>
+          </span>
+                  </dt>
+        <dd class="inherited">
+          Returns a string representation of this object.
+                  <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="operators">
+      <h2 style="font-size: 14px;">Operators</h2>
+      <dl class="callables">
+        <dt id="operator *" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/operator_multiply.html">operator *</a></span><span class="signature">(<wbr><span class="parameter" id="*-param-times"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">times</span></span>)
+            <span class="returntype parameter">→ <a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html">String</a></span>
+          </span>
+                  </dt>
+        <dd>
+          Creates a new string by concatenating this string with itself a number
+of times. <a href="https://api.dart.dev/stable/2.5.0/dart-core/String/operator_multiply.html">[...]</a>
+                  
+</dd>
+        <dt id="operator +" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/operator_plus.html">operator +</a></span><span class="signature">(<wbr><span class="parameter" id="+-param-other"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html">String</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">→ <a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html">String</a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          通过连接此字符串来创建新字符串</font></font><code>other</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/operator_plus.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+        <dt id="operator ==" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/operator_equals.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">operator ==</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Object-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Object</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> other</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/bool-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bool</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          如果other是</font></font><code>String</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">具有相同代码单元序列的，</font><font style="vertical-align: inherit;">则返回true </font><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/operator_equals.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  <div class="features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">覆盖</font></font></div>
+</dd>
+        <dt id="operator []" class="callable">
+          <span class="name"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/operator_get.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">operator []</font></font></a></span><span class="signature"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><wbr><span class="parameter" id="[]-param-index"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.5.0/dart-core/int-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">int</font></font></a></span> <span class="parameter-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> index</font></font></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）
+             </font></font><span class="returntype parameter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">→ </font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串</font></font></a></span>
+          </span>
+                  </dt>
+        <dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          获取给定的字符（作为单代码单元</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font><code>index</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/operator_get.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[...]</font></font></a>
+                  
+</dd>
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right" style="visibility: visible;">
+    <ol>
+      <li class="section-title"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html#constructors"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构造函数</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/String.fromCharCode.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fromCharCode</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/String.fromCharCodes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fromCharCodes</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/String.fromEnvironment.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fromEnvironment</font></font></a></li>
+    
+      <li class="section-title">
+        <a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html#instance-properties"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">属性</font></font></a>
+      </li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/codeUnits.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CODEUNITS</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/hashCode.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的hashCode</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/isEmpty.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是空的</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/isNotEmpty.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">isNotEmpty</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/length.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">长度</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/runes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">符文</font></font></a></li>
+      <li class="inherited"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Object/runtimeType.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">runtimeType</font></font></a></li>
+    
+      <li class="section-title"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html#instance-methods"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">方法</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/codeUnitAt.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">codeUnitAt</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/compareTo.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相比于</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/contains.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">包含</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/endsWith.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以。。结束</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/indexOf.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">指数</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/lastIndexOf.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lastIndexOf</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/padLeft.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">padLeft</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/padRight.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">padRight</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceAll.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全部替换</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceAllMapped.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">replaceAllMapped</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceFirst.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">replaceFirst</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceFirstMapped.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">replaceFirstMapped</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/replaceRange.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">replaceRange</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/split.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分裂</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/splitMapJoin.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">splitMapJoin</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/startsWith.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以。。开始</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/substring.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">子</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/toLowerCase.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">toLowerCase</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/toUpperCase.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">toUpperCase</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/trim.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修剪</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/trimLeft.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">trimLeft</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/trimRight.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">trimRight</font></font></a></li>
+      <li class="inherited"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern/allMatches.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">allMatches</font></font></a></li>
+      <li class="inherited"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Pattern/matchAsPrefix.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">matchAsPrefix</font></font></a></li>
+      <li class="inherited"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Object/noSuchMethod.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">noSuchMethod</font></font></a></li>
+      <li class="inherited"><a href="https://api.dart.dev/stable/2.5.0/dart-core/Object/toString.html"><font style="vertical-align: inherit;"></font></a></li>
+    
+      <li class="section-title"><a href="https://api.dart.dev/stable/2.5.0/dart-core/String-class.html#operators"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运营商</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/operator_multiply.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运营商*</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/operator_plus.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运营商+</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/operator_equals.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">operator ==</font></font></a></li>
+      <li><a href="https://api.dart.dev/stable/2.5.0/dart-core/String/operator_get.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">operator []</font></font></a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    Dart 2.5.0
+  </font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+
+  •
+ </font><span class="copyright no-break"><a href="http://creativecommons.org/licenses/by-sa/4.0/"><font style="vertical-align: inherit;">cc许可证</font></a></span></font><span class="copyright no-break">
+  <a href="http://creativecommons.org/licenses/by-sa/4.0/"><font style="vertical-align: inherit;"></font></a>
+</span>
+
+</footer>
+
+<script async="" src="./String类 - dart：核心库 - Dart API_files/analytics.js.下载"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./String类 - dart：核心库 - Dart API_files/typeahead.bundle.min.js.下载"></script>
+<script src="./String类 - dart：核心库 - Dart API_files/highlight.pack.js.下载"></script>
+<script src="./String类 - dart：核心库 - Dart API_files/URI.js.下载"></script>
+<script src="./String类 - dart：核心库 - Dart API_files/script.js.下载"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26406144-9', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script async="" src="https://survey.g.doubleclick.net/async_survey?site=4vq7qmqpfn4zjduve64c4h6lqa">
+</script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./String类 - dart：核心库 - Dart API_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
